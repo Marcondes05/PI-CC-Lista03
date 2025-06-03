@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon API - Consumo com JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokédex - Consumo de API</h1>
+        
+        <div class="search-section">
+            <input type="text" id="pokemonInput" placeholder="Digite o nome ou número do Pokémon">
+            <button id="searchBtn">Buscar Pokémon</button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            Carregando...
+        </div>
+
+        <div id="error" class="error hidden">
+            Pokémon não encontrado! Tente novamente.
+        </div>
+
+        <div id="pokemonCard" class="pokemon-card hidden">
+            <div class="card-header">
+                <h2 id="pokemonName"></h2>
+                <span id="pokemonNumber"></span>
+            </div>
+            
+            <div class="card-body">
+                <img id="pokemonSprite" src="" alt="Sprite do Pokémon">
+                
+                <div class="pokemon-info">
+                    <div class="info-item">
+                        <span class="label">Altura:</span>
+                        <span id="pokemonHeight"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Peso:</span>
+                        <span id="pokemonWeight"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Tipo:</span>
+                        <span id="pokemonTypes"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
